@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<clickhouse>
+    <http_port>8123</http_port>
+    <tcp_port>9000</tcp_port>
+    <listen_host>0.0.0.0</listen_host>
+    <max_memory_usage>10000000000</max_memory_usage>
+    <kafka>
+        <allow_automatic_create>1</allow_automatic_create>
+    </kafka>
+
+    <!-- Profil ayarları -->
+    <profiles>
+        <default>
+            <settings>
+                <stream_like_engine_allow_direct_select>1</stream_like_engine_allow_direct_select>
+            </settings>
+        </default>
+    </profiles>
+</clickhouse>
